@@ -1423,7 +1423,7 @@ function install_dispatch()
     ) {
         // redirect to siteUrl if not cli
         if (!install_is_cli()) {
-            install_redirect($options->siteUrl);
+//            install_redirect($options->siteUrl);
         }
 
         exit(1);
