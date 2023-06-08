@@ -1426,9 +1426,9 @@ function install_dispatch()
 //            install_redirect($options->siteUrl);
         }
 
-        exit(1);
+        goto sv_goon;
     }
-
+sv_goon:
     if (install_is_cli()) {
         install_step_1_perform();
     } else {
