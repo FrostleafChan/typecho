@@ -25,9 +25,6 @@ $db->addServer(array (
   'password' => $_ENV["PASSWORD"],
   'charset' => $_ENV["CHARSET"],
   'port' => $_ENV["PORT"],
-  'database' => $_ENV["DATABASE"],
-  'engine' => $_ENV["ENGINE"],
-  'sslCa' => $_ENV["SSLCA"],
-  'sslVerify' => $_ENV["SSLVERIFY"]
+  'database' => $_ENV["DATABASE"]
 ), \Typecho\Db::READ | \Typecho\Db::WRITE);
 \Typecho\Db::set($db);
