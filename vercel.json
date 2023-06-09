@@ -8,7 +8,7 @@
       }
     },
     "routes": [
-      { "src": "/(.*)", "dest": "/api/index.php" },
-      { "src": "/.debug/(.*)", "dest": "/api/debug/$1.php" }
+      { "src": "/.debug/(.*)", "dest": "/api/debug/$1.php" },
+      { "src": "/(.*)", "dest": "/api/index.php" }
     ]
   }
