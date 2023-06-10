@@ -1371,7 +1371,7 @@ function install_step_3_perform()
 
     try {
 user:
-        if($skipInst['user']) goto category;
+        if(isset($skipInst['user'])) goto category;
         $hasher = new \Utils\PasswordHash(8, true);
         $installDb->query(
             $installDb->insert('table.users')->rows([
@@ -1386,7 +1386,7 @@ user:
         );
 
 category:
-        if($skipInst['category']) goto first_content;
+        if(isset($skipInst['category'])) goto first_content;
         $installDb->query(
             $installDb->insert('table.metas')
                 ->rows([
@@ -1401,7 +1401,7 @@ category:
         $installDb->query($installDb->insert('table.relationships')->rows(['cid' => 1, 'mid' => 1]));
 
 first_content:
-        if($skipInst['first_content']) goto comment;
+        if(isset($skipInst['first_content'])) goto comment;
         $installDb->query(
             $installDb->insert('table.contents')->rows([
                 'title' => _t('欢迎使用 Typecho'),
@@ -1440,7 +1440,7 @@ first_content:
         );
 
 comment:
-        if($skipInst['comment']) goto options;
+        if(isset($skipInst['comment'])) goto options;
         $installDb->query(
             $installDb->insert('table.comments')->rows([
                 'cid' => 1,
@@ -1458,7 +1458,7 @@ comment:
         );
 
 options:
-        if($skipInst['options']) goto inst_succ;
+        if(isset($skipInst['options'])) goto inst_succ;
         foreach (install_get_default_options() as $key => $value) {
             // mark installing finished
             if ($key == 'installed') {
@@ -1535,7 +1535,7 @@ function install_dispatch()
 
         switch (true) {
             case $step == 2:
-                if (!install_check('db_structure')) {   $arr[$i]=array_column($_POST,$i);
+                if (!install_check('db_structure')) {
 
                     $action = 2;
                 } else {
