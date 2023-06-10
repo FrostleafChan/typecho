@@ -1279,23 +1279,23 @@ function install_step_3()
                     <li>
                         <label class="typecho-label" for="instSkip">跳过安装环节</label>
                         <div>
-                            <input type="checkbox" id="skipUserInst" name="skipInst" value="user">
+                            <input type="checkbox" id="skipUserInst" name="skipInst[]" value="user">
                             <label for="skipUserInst">用户信息</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="skipCategoryInst" name="skipInst" value="category">
+                            <input type="checkbox" id="skipCategoryInst" name="skipInst[]" value="category">
                             <label for="skipCategoryInst">默认分类</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="skipFirstContentInst" name="skipInst" value="first_content">
+                            <input type="checkbox" id="skipFirstContentInst" name="skipInst[]" value="first_content">
                             <label for="skipFirstContentInst">初始blog, 关于页面</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="skipCommentInst" name="skipInst" value="comment">
+                            <input type="checkbox" id="skipCommentInst" name="skipInst[]" value="comment">
                             <label for="skipCommentInst">初始评论</label>
                         </div>
                         <div>
-                            <input type="checkbox" id="skipOptionsInst" name="skipInst" value="options" checked="">
+                            <input type="checkbox" id="skipOptionsInst" name="skipInst[]" value="options" checked="">
                             <label for="skipOptionsInst">网站配置</label>
                         </div>
                         <p class="description">多次安装, 避免Vercel边缘超时导致安装无法进行</p>
@@ -1535,7 +1535,8 @@ function install_dispatch()
 
         switch (true) {
             case $step == 2:
-                if (!install_check('db_structure')) {
+                if (!install_check('db_structure')) {   $arr[$i]=array_column($_POST,$i);
+
                     $action = 2;
                 } else {
                     install_redirect('install.php?step=3');
