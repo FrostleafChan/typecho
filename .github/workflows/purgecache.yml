@@ -28,9 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete old workflow runs
-        uses: MajorScruffy/delete-old-workflow-runs@v0.2.0
+        uses: GitRML/delete-workflow-runs@main
         with:
-          repository: LtD0gE/typecho
-          older-than-seconds: 86400
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
+          retain_days: 5
