@@ -27,6 +27,8 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
+      - name: Delay for 30 seconds
+        run: sleep 30s
       - name: Delete old workflow runs
         uses: GitRML/delete-workflow-runs@main
         with:
