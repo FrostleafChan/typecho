@@ -1,0 +1,14 @@
+{
+    "functions": {
+      "api/index.php": {
+        "runtime": "vercel-php@0.4.1"
+      },
+      "api/debug/db_perf.php": {
+        "runtime": "vercel-php@0.4.1"
+      }
+    },
+    "routes": [
+      { "src": "/.debug/(.*)", "dest": "/api/debug/$1.php" },
+      { "src": "/(.*)", "dest": "/api/index.php" }
+    ]
+  }

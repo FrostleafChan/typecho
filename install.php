@@ -76,156 +76,156 @@ function install_is_cli(): bool
 function install_get_default_routers(): array
 {
     return [
-        'index'              =>
-            [
-                'url'    => '/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'archive'            =>
-            [
-                'url'    => '/blog/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'do'                 =>
-            [
-                'url'    => '/action/[action:alpha]',
-                'widget' => '\Widget\Action',
-                'action' => 'action',
-            ],
-        'post'               =>
-            [
-                'url'    => '/archives/[cid:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'attachment'         =>
-            [
-                'url'    => '/attachment/[cid:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'category'           =>
-            [
-                'url'    => '/category/[slug]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'tag'                =>
-            [
-                'url'    => '/tag/[slug]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'author'             =>
-            [
-                'url'    => '/author/[uid:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'search'             =>
-            [
-                'url'    => '/search/[keywords]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'index_page'         =>
-            [
-                'url'    => '/page/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'archive_page'       =>
-            [
-                'url'    => '/blog/page/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'category_page'      =>
-            [
-                'url'    => '/category/[slug]/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'tag_page'           =>
-            [
-                'url'    => '/tag/[slug]/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'author_page'        =>
-            [
-                'url'    => '/author/[uid:digital]/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'search_page'        =>
-            [
-                'url'    => '/search/[keywords]/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'archive_year'       =>
-            [
-                'url'    => '/[year:digital:4]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'archive_month'      =>
-            [
-                'url'    => '/[year:digital:4]/[month:digital:2]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'archive_day'        =>
-            [
-                'url'    => '/[year:digital:4]/[month:digital:2]/[day:digital:2]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'archive_year_page'  =>
-            [
-                'url'    => '/[year:digital:4]/page/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
+        'index' =>
+        [
+            'url' => '/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'archive' =>
+        [
+            'url' => '/blog/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'do' =>
+        [
+            'url' => '/action/[action:alpha]',
+            'widget' => '\Widget\Action',
+            'action' => 'action',
+        ],
+        'post' =>
+        [
+            'url' => '/archives/[cid:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'attachment' =>
+        [
+            'url' => '/attachment/[cid:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'category' =>
+        [
+            'url' => '/category/[slug]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'tag' =>
+        [
+            'url' => '/tag/[slug]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'author' =>
+        [
+            'url' => '/author/[uid:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'search' =>
+        [
+            'url' => '/search/[keywords]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'index_page' =>
+        [
+            'url' => '/page/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'archive_page' =>
+        [
+            'url' => '/blog/page/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'category_page' =>
+        [
+            'url' => '/category/[slug]/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'tag_page' =>
+        [
+            'url' => '/tag/[slug]/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'author_page' =>
+        [
+            'url' => '/author/[uid:digital]/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'search_page' =>
+        [
+            'url' => '/search/[keywords]/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'archive_year' =>
+        [
+            'url' => '/[year:digital:4]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'archive_month' =>
+        [
+            'url' => '/[year:digital:4]/[month:digital:2]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'archive_day' =>
+        [
+            'url' => '/[year:digital:4]/[month:digital:2]/[day:digital:2]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'archive_year_page' =>
+        [
+            'url' => '/[year:digital:4]/page/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
         'archive_month_page' =>
-            [
-                'url'    => '/[year:digital:4]/[month:digital:2]/page/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'archive_day_page'   =>
-            [
-                'url'    => '/[year:digital:4]/[month:digital:2]/[day:digital:2]/page/[page:digital]/',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'comment_page'       =>
-            [
-                'url'    => '[permalink:string]/comment-page-[commentPage:digital]',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
-        'feed'               =>
-            [
-                'url'    => '/feed[feed:string:0]',
-                'widget' => '\Widget\Archive',
-                'action' => 'feed',
-            ],
-        'feedback'           =>
-            [
-                'url'    => '[permalink:string]/[type:alpha]',
-                'widget' => '\Widget\Feedback',
-                'action' => 'action',
-            ],
-        'page'               =>
-            [
-                'url'    => '/[slug].html',
-                'widget' => '\Widget\Archive',
-                'action' => 'render',
-            ],
+        [
+            'url' => '/[year:digital:4]/[month:digital:2]/page/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'archive_day_page' =>
+        [
+            'url' => '/[year:digital:4]/[month:digital:2]/[day:digital:2]/page/[page:digital]/',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'comment_page' =>
+        [
+            'url' => '[permalink:string]/comment-page-[commentPage:digital]',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
+        'feed' =>
+        [
+            'url' => '/feed[feed:string:0]',
+            'widget' => '\Widget\Archive',
+            'action' => 'feed',
+        ],
+        'feedback' =>
+        [
+            'url' => '[permalink:string]/[type:alpha]',
+            'widget' => '\Widget\Feedback',
+            'action' => 'action',
+        ],
+        'page' =>
+        [
+            'url' => '/[slug].html',
+            'widget' => '\Widget\Archive',
+            'action' => 'render',
+        ],
     ];
 }
 
@@ -533,7 +533,7 @@ function install_success($step, ?array $config = null)
         install_throw_json([
             'success' => 1,
             'message' => $step,
-            'config'  => $config
+            'config' => $config
         ]);
     }
 }
@@ -569,7 +569,9 @@ function install_js_support()
     <div id="success" class="row typecho-page-main hidden">
         <div class="col-mb-12 col-tb-8 col-tb-offset-2">
             <div class="typecho-page-title">
-                <h2><?php _e('安装成功'); ?></h2>
+                <h2>
+                    <?php _e('安装成功'); ?>
+                </h2>
             </div>
             <div id="typecho-welcome">
                 <p class="keep-word">
@@ -580,10 +582,16 @@ function install_js_support()
                     <?php _e('您的密码是'); ?>: <strong class="warning" id="success-password"></strong>
                 </p>
                 <ul>
-                    <li><a id="login-url" href=""><?php _e('点击这里访问您的控制面板'); ?></a></li>
-                    <li><a id="site-url" href=""><?php _e('点击这里查看您的 Blog'); ?></a></li>
+                    <li><a id="login-url" href="">
+                            <?php _e('点击这里访问您的控制面板'); ?>
+                        </a></li>
+                    <li><a id="site-url" href="">
+                            <?php _e('点击这里查看您的 Blog'); ?>
+                        </a></li>
                 </ul>
-                <p><?php _e('希望您能尽情享用 Typecho 带来的乐趣!'); ?></p>
+                <p>
+                    <?php _e('希望您能尽情享用 Typecho 带来的乐趣!'); ?>
+                </p>
             </div>
         </div>
     </div>
@@ -695,33 +703,47 @@ function install_step_1()
     <div class="row typecho-page-main">
         <div class="col-mb-12 col-tb-8 col-tb-offset-2">
             <div class="typecho-page-title">
-                <h2><?php _e('欢迎使用 Typecho'); ?></h2>
+                <h2>
+                    <?php _e('欢迎使用 Typecho'); ?>
+                </h2>
             </div>
             <div id="typecho-welcome">
                 <form autocomplete="off" method="post" action="install.php">
-                    <h3><?php _e('安装说明'); ?></h3>
+                    <h3>
+                        <?php _e('安装说明'); ?>
+                    </h3>
                     <p class="warning">
-                        <strong><?php _e('本安装程序将自动检测服务器环境是否符合最低配置需求. 如果不符合, 将在上方出现提示信息, 请按照提示信息检查您的主机配置. 如果服务器环境符合要求, 将在下方出现 "开始下一步" 的按钮, 点击此按钮即可一步完成安装.'); ?></strong>
+                        <strong>
+                            <?php _e('本安装程序将自动检测服务器环境是否符合最低配置需求. 如果不符合, 将在上方出现提示信息, 请按照提示信息检查您的主机配置. 如果服务器环境符合要求, 将在下方出现 "开始下一步" 的按钮, 点击此按钮即可一步完成安装.'); ?>
+                        </strong>
                     </p>
-                    <h3><?php _e('许可及协议'); ?></h3>
+                    <h3>
+                        <?php _e('许可及协议'); ?>
+                    </h3>
                     <ul>
-                        <li><?php _e('Typecho 基于 <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a> 协议发布, 我们允许用户在 GPL 协议许可的范围内使用, 拷贝, 修改和分发此程序.'); ?>
-                            <?php _e('在GPL许可的范围内, 您可以自由地将其用于商业以及非商业用途.'); ?></li>
-                        <li><?php _e('Typecho 软件由其社区提供支持, 核心开发团队负责维护程序日常开发工作以及新特性的制定.'); ?>
+                        <li>
+                            <?php _e('Typecho 基于 <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a> 协议发布, 我们允许用户在 GPL 协议许可的范围内使用, 拷贝, 修改和分发此程序.'); ?>
+                            <?php _e('在GPL许可的范围内, 您可以自由地将其用于商业以及非商业用途.'); ?>
+                        </li>
+                        <li>
+                            <?php _e('Typecho 软件由其社区提供支持, 核心开发团队负责维护程序日常开发工作以及新特性的制定.'); ?>
                             <?php _e('如果您遇到使用上的问题, 程序中的 BUG, 以及期许的新功能, 欢迎您在社区中交流或者直接向我们贡献代码.'); ?>
-                            <?php _e('对于贡献突出者, 他的名字将出现在贡献者名单中.'); ?></li>
+                            <?php _e('对于贡献突出者, 他的名字将出现在贡献者名单中.'); ?>
+                        </li>
                     </ul>
 
                     <p class="submit">
-                        <button class="btn primary" type="submit"><?php _e('我准备好了, 开始下一步 &raquo;'); ?></button>
+                        <button class="btn primary" type="submit">
+                            <?php _e('我准备好了, 开始下一步 &raquo;'); ?>
+                        </button>
                         <input type="hidden" name="step" value="1">
 
-                        <?php if (count($langs) > 1) : ?>
+                        <?php if (count($langs) > 1): ?>
                             <select style="float: right" onchange="location.href='?lang=' + this.value">
-                                <?php foreach ($langs as $key => $val) : ?>
-                                    <option value="<?php echo $key; ?>"<?php if ($lang == $key) :
-                                        ?> selected<?php
-                                                   endif; ?>><?php echo $val; ?></option>
+                                <?php foreach ($langs as $key => $val): ?>
+                                    <option value="<?php echo $key; ?>" <?php if ($lang == $key):
+                                           ?> selected<?php
+                                       endif; ?>><?php echo $val; ?></option>
                                 <?php endforeach; ?>
                             </select>
                         <?php endif; ?>
@@ -754,25 +776,26 @@ function install_step_1_perform()
             $errors[] = $error;
         }
     }
-
-    $uploadDir = '/usr/uploads';
-    $realUploadDir = \Typecho\Common::url($uploadDir, __TYPECHO_ROOT_DIR__);
-    $writeable = true;
-    if (is_dir($realUploadDir)) {
-        if (!is_writeable($realUploadDir) || !is_readable($realUploadDir)) {
-            if (!@chmod($realUploadDir, 0755)) {
+    /*
+        $uploadDir = '/usr/uploads';
+        $realUploadDir = \Typecho\Common::url($uploadDir, __TYPECHO_ROOT_DIR__);
+        $writeable = true;
+        if (is_dir($realUploadDir)) {
+            if (!is_writeable($realUploadDir) || !is_readable($realUploadDir)) {
+                if (!@chmod($realUploadDir, 0755)) {
+                    $writeable = false;
+                }
+            }
+        } else {
+            if (!@mkdir($realUploadDir, 0755)) {
                 $writeable = false;
             }
         }
-    } else {
-        if (!@mkdir($realUploadDir, 0755)) {
-            $writeable = false;
-        }
-    }
 
-    if (!$writeable) {
-        $errors[] = _t('上传目录无法写入, 请手动将安装目录下的 %s 目录的权限设置为可写然后继续升级', $uploadDir);
-    }
+        if (!$writeable) {
+            $errors[] = _t('上传目录无法写入, 请手动将安装目录下的 %s 目录的权限设置为可写然后继续升级', $uploadDir);
+        }
+    */
 
     if (empty($errors)) {
         install_success(2);
@@ -801,28 +824,38 @@ function install_step_2()
     <div class="row typecho-page-main">
         <div class="col-mb-12 col-tb-8 col-tb-offset-2">
             <div class="typecho-page-title">
-                <h2><?php _e('初始化配置'); ?></h2>
+                <h2>
+                    <?php _e('初始化配置'); ?>
+                </h2>
             </div>
             <form autocomplete="off" action="install.php" method="post">
                 <ul class="typecho-option">
                     <li>
-                        <label for="dbAdapter" class="typecho-label"><?php _e('数据库适配器'); ?></label>
+                        <label for="dbAdapter" class="typecho-label">
+                            <?php _e('数据库适配器'); ?>
+                        </label>
                         <select name="dbAdapter" id="dbAdapter" onchange="location.href='?step=2&driver=' + this.value">
-                            <?php foreach ($drivers as $driver => $name) : ?>
-                                <option value="<?php echo $driver; ?>"<?php if ($driver == $adapter) :
-                                    ?> selected="selected"<?php
-                                               endif; ?>><?php echo $name; ?></option>
+                            <?php foreach ($drivers as $driver => $name): ?>
+                                <option value="<?php echo $driver; ?>" <?php if ($driver == $adapter):
+                                       ?> selected="selected"<?php
+                                   endif; ?>><?php echo $name; ?></option>
                             <?php endforeach; ?>
                         </select>
-                        <p class="description"><?php _e('请根据您的数据库类型选择合适的适配器'); ?></p>
+                        <p class="description">
+                            <?php _e('请根据您的数据库类型选择合适的适配器'); ?>
+                        </p>
                         <input type="hidden" id="dbNext" name="dbNext" value="none">
                     </li>
                 </ul>
                 <ul class="typecho-option">
                     <li>
-                        <label class="typecho-label" for="dbPrefix"><?php _e('数据库前缀'); ?></label>
+                        <label class="typecho-label" for="dbPrefix">
+                            <?php _e('数据库前缀'); ?>
+                        </label>
                         <input type="text" class="text" name="dbPrefix" id="dbPrefix" value="typecho_" />
-                        <p class="description"><?php _e('默认前缀是 "typecho_"'); ?></p>
+                        <p class="description">
+                            <?php _e('默认前缀是 "typecho_"'); ?>
+                        </p>
                     </li>
                 </ul>
                 <?php require_once './install/' . $type . '.php'; ?>
@@ -830,7 +863,9 @@ function install_step_2()
 
                 <ul class="typecho-option typecho-option-submit">
                     <li>
-                        <button id="confirm" type="submit" class="btn primary"><?php _e('确认, 开始安装 &raquo;'); ?></button>
+                        <button id="confirm" type="submit" class="btn primary">
+                            <?php _e('确认, 开始安装 &raquo;'); ?>
+                        </button>
                         <input type="hidden" name="step" value="2">
                     </li>
                 </ul>
@@ -886,21 +921,21 @@ function install_step_2()
             $('#dbNext').val('none');
         });
 
-        <?php if (!empty($config)) : ?>
-        function fillInput(config) {
-            for (let k in config) {
-                let value = config[k],
-                    key = 'db' + k.charAt(0).toUpperCase() + k.slice(1),
-                    input = $('#' + key)
-                        .attr('readonly', 'readonly')
-                        .val(value);
+            <?php if (!empty($config)): ?>
+                function fillInput(config) {
+                    for (let k in config) {
+                        let value = config[k],
+                            key = 'db' + k.charAt(0).toUpperCase() + k.slice(1),
+                            input = $('#' + key)
+                                .attr('readonly', 'readonly')
+                                .val(value);
 
-                $('option:not(:selected)', input).attr('disabled', 'disabled');
-            }
-        }
+                        $('option:not(:selected)', input).attr('disabled', 'disabled');
+                    }
+                }
 
-        fillInput(<?php echo json_encode($config); ?>);
-        <?php endif; ?>
+                fillInput(<?php echo json_encode($config); ?>);
+            <?php endif; ?>
     </script>
     <?php
     install_js_support();
@@ -1093,7 +1128,7 @@ function install_step_2_perform()
                 _t('安装程序无法自动创建 <strong>config.inc.php</strong> 文件') . "\n" .
                 _t('您可以在网站根目录下手动创建 <strong>config.inc.php</strong> 文件, 并复制如下代码至其中'),
                 [
-                'code' => $code
+                    'code' => $code
                 ]
             );
         }
@@ -1190,40 +1225,87 @@ function install_step_3()
     <div class="row typecho-page-main">
         <div class="col-mb-12 col-tb-8 col-tb-offset-2">
             <div class="typecho-page-title">
-                <h2><?php _e('创建您的管理员帐号'); ?></h2>
+                <h2>
+                    <?php _e('创建您的管理员帐号'); ?>
+                </h2>
             </div>
             <form autocomplete="off" action="install.php" method="post">
                 <ul class="typecho-option">
                     <li>
-                        <label class="typecho-label" for="userUrl"><?php _e('网站地址'); ?></label>
-                        <input autocomplete="new-password" type="text" name="userUrl" id="userUrl" class="text" value="<?php $options->rootUrl(); ?>" />
-                        <p class="description"><?php _e('这是程序自动匹配的网站路径, 如果不正确请修改它'); ?></p>
+                        <label class="typecho-label" for="userUrl">
+                            <?php _e('网站地址'); ?>
+                        </label>
+                        <input autocomplete="new-password" type="text" name="userUrl" id="userUrl" class="text"
+                            value="<?php $options->rootUrl(); ?>" />
+                        <p class="description">
+                            <?php _e('这是程序自动匹配的网站路径, 如果不正确请修改它'); ?>
+                        </p>
                     </li>
                 </ul>
                 <ul class="typecho-option">
                     <li>
-                        <label class="typecho-label" for="userName"><?php _e('用户名'); ?></label>
+                        <label class="typecho-label" for="userName">
+                            <?php _e('用户名'); ?>
+                        </label>
                         <input autocomplete="new-password" type="text" name="userName" id="userName" class="text" />
-                        <p class="description"><?php _e('请填写您的用户名'); ?></p>
+                        <p class="description">
+                            <?php _e('请填写您的用户名'); ?>
+                        </p>
                     </li>
                 </ul>
                 <ul class="typecho-option">
                     <li>
-                        <label class="typecho-label" for="userPassword"><?php _e('登录密码'); ?></label>
+                        <label class="typecho-label" for="userPassword">
+                            <?php _e('登录密码'); ?>
+                        </label>
                         <input type="password" name="userPassword" id="userPassword" class="text" />
-                        <p class="description"><?php _e('请填写您的登录密码, 如果留空系统将为您随机生成一个'); ?></p>
+                        <p class="description">
+                            <?php _e('请填写您的登录密码, 如果留空系统将为您随机生成一个'); ?>
+                        </p>
                     </li>
                 </ul>
                 <ul class="typecho-option">
                     <li>
-                        <label class="typecho-label" for="userMail"><?php _e('邮件地址'); ?></label>
+                        <label class="typecho-label" for="userMail">
+                            <?php _e('邮件地址'); ?>
+                        </label>
                         <input autocomplete="new-password" type="text" name="userMail" id="userMail" class="text" />
-                        <p class="description"><?php _e('请填写一个您的常用邮箱'); ?></p>
+                        <p class="description">
+                            <?php _e('请填写一个您的常用邮箱'); ?>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="typecho-option">
+                    <li>
+                        <label class="typecho-label" for="instSkip">跳过安装环节</label>
+                        <div>
+                            <input type="checkbox" id="skipUserInst" name="skipInst[]" value="user">
+                            <label for="skipUserInst">用户信息</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skipCategoryInst" name="skipInst[]" value="category">
+                            <label for="skipCategoryInst">默认分类</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skipFirstContentInst" name="skipInst[]" value="first_content">
+                            <label for="skipFirstContentInst">初始blog, 关于页面</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skipCommentInst" name="skipInst[]" value="comment">
+                            <label for="skipCommentInst">初始评论</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skipOptionsInst" name="skipInst[]" value="options" checked="">
+                            <label for="skipOptionsInst">网站配置</label>
+                        </div>
+                        <p class="description">多次安装, 避免Vercel边缘超时导致安装无法进行</p>
                     </li>
                 </ul>
                 <ul class="typecho-option typecho-option-submit">
                     <li>
-                        <button type="submit" class="btn primary"><?php _e('继续安装 &raquo;'); ?></button>
+                        <button type="submit" class="btn primary">
+                            <?php _e('继续安装 &raquo;'); ?>
+                        </button>
                         <input type="hidden" name="step" value="3">
                     </li>
                 </ul>
@@ -1240,6 +1322,7 @@ function install_step_3()
 function install_step_3_perform()
 {
     global $installDb;
+    global $skipInst;
 
     $request = \Typecho\Request::getInstance();
     $defaultPassword = \Typecho\Common::randString(8);
@@ -1259,7 +1342,13 @@ function install_step_3_perform()
             'userPassword',
             'userMail',
         ]);
-    }
+        
+        if(isset($_POST['skipInst'])) {
+            $skipInst = array();
+            foreach($_POST['skipInst'] as $skip) {
+              $skipInst[$skip] = true;
+            }
+        }
 
     $error = (new \Typecho\Validate())
         ->addRule('userUrl', 'required', _t('请填写站点地址'))
@@ -1281,7 +1370,8 @@ function install_step_3_perform()
     }
 
     try {
-        // write user
+user:
+        if(isset($skipInst['user'])) goto category;
         $hasher = new \Utils\PasswordHash(8, true);
         $installDb->query(
             $installDb->insert('table.users')->rows([
@@ -1295,7 +1385,8 @@ function install_step_3_perform()
             ])
         );
 
-        // write category
+category:
+        if(isset($skipInst['category'])) goto first_content;
         $installDb->query(
             $installDb->insert('table.metas')
                 ->rows([
@@ -1309,11 +1400,13 @@ function install_step_3_perform()
 
         $installDb->query($installDb->insert('table.relationships')->rows(['cid' => 1, 'mid' => 1]));
 
-        // write first page and post
+first_content:
+        if(isset($skipInst['first_content'])) goto comment;
         $installDb->query(
             $installDb->insert('table.contents')->rows([
                 'title' => _t('欢迎使用 Typecho'),
-                'slug' => 'start', 'created' => \Typecho\Date::time(),
+                'slug' => 'start',
+                'created' => \Typecho\Date::time(),
                 'modified' => \Typecho\Date::time(),
                 'text' => '<!--markdown-->' . _t('如果您看到这篇文章,表示您的 blog 已经安装成功.'),
                 'authorId' => 1,
@@ -1346,10 +1439,12 @@ function install_step_3_perform()
             ])
         );
 
-        // write comment
+comment:
+        if(isset($skipInst['comment'])) goto options;
         $installDb->query(
             $installDb->insert('table.comments')->rows([
-                'cid' => 1, 'created' => \Typecho\Date::time(),
+                'cid' => 1,
+                'created' => \Typecho\Date::time(),
                 'author' => 'Typecho',
                 'ownerId' => 1,
                 'url' => 'https://typecho.org',
@@ -1362,7 +1457,8 @@ function install_step_3_perform()
             ])
         );
 
-        // write options
+options:
+        if(isset($skipInst['options'])) goto inst_succ;
         foreach (install_get_default_options() as $key => $value) {
             // mark installing finished
             if ($key == 'installed') {
@@ -1376,13 +1472,13 @@ function install_step_3_perform()
     } catch (\Typecho\Db\Exception $e) {
         install_raise_error($e->getMessage());
     }
-
+ inst_succ:
     $parts = parse_url($options->loginAction);
     $parts['query'] = http_build_query([
-            'name'  => $config['userName'],
-            'password' => $config['userPassword'],
-            'referer' => $options->adminUrl
-        ]);
+        'name' => $config['userName'],
+        'password' => $config['userPassword'],
+        'referer' => $options->adminUrl
+    ]);
     $loginUrl = \Typecho\Common::buildUrl($parts);
 
     install_success(0, [
@@ -1391,6 +1487,7 @@ function install_step_3_perform()
         \Widget\Security::alloc()->getTokenUrl($loginUrl, $request->getReferer()),
         $config['userUrl']
     ]);
+}
 }
 
 /**
@@ -1422,12 +1519,12 @@ function install_dispatch()
     ) {
         // redirect to siteUrl if not cli
         if (!install_is_cli()) {
-            install_redirect($options->siteUrl);
+            //            install_redirect($options->siteUrl);
         }
 
-        exit(1);
+        goto sv_goon;
     }
-
+    sv_goon:
     if (install_is_cli()) {
         install_step_1_perform();
     } else {
@@ -1439,6 +1536,7 @@ function install_dispatch()
         switch (true) {
             case $step == 2:
                 if (!install_check('db_structure')) {
+
                     $action = 2;
                 } else {
                     install_redirect('install.php?step=3');
@@ -1463,25 +1561,30 @@ function install_dispatch()
             exit;
         }
         ?>
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="<?php _e('UTF-8'); ?>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title><?php _e('Typecho 安装程序'); ?></title>
-    <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'normalize.css') ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'grid.css') ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'style.css') ?>" />
-    <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'install.css') ?>" />
-    <script src="<?php $options->adminStaticUrl('js', 'jquery.js'); ?>"></script>
-</head>
-<body>
-    <div class="body container">
-        <h1><a href="https://typecho.org" target="_blank" class="i-logo">Typecho</a></h1>
-        <?php $method(); ?>
-    </div>
-</body>
-</html>
+        <!DOCTYPE HTML>
+        <html>
+
+        <head>
+            <meta charset="<?php _e('UTF-8'); ?>" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+            <title>
+                <?php _e('Typecho 安装程序'); ?>
+            </title>
+            <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'normalize.css') ?>" />
+            <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'grid.css') ?>" />
+            <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'style.css') ?>" />
+            <link rel="stylesheet" type="text/css" href="<?php $options->adminStaticUrl('css', 'install.css') ?>" />
+            <script src="<?php $options->adminStaticUrl('js', 'jquery.js'); ?>"></script>
+        </head>
+
+        <body>
+            <div class="body container">
+                <h1><a href="https://typecho.org" target="_blank" class="i-logo">Typecho</a></h1>
+                <?php $method(); ?>
+            </div>
+        </body>
+
+        </html>
         <?php
     }
 }
