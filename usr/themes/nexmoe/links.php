@@ -4,23 +4,41 @@
 *
 * @package custom
 */
-if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('layout/_partial/head.php'); ?>
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('layout/_partial/head.php');
+?>
+<body class="mdui-drawer-body-left">
+<?php $this->need('layout/_partial/background.php'); ?>
+<div id="nexmoe-header">
+    <?php $this->need('layout/_partial/header.php'); ?>
+</div>
+<div id="nexmoe-content">
+    <div class="nexmoe-primary">
 
-<article class="main-content page-page">
-    <div class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            <?php $this->title() ?>
-        </h1>
-        <div class="post-data">
-            <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished">Published on <?php $this->date('M j, Y'); ?></time>
+        <div class="nexmoe-post">
+            <div class="nexmoe-post-cover mdui-ripple">
+                <?php if ($this->fields->Cover) { ?>
+                    <img src="<?php echo $this->fields->Cover ?>">
+                <?php } else { ?>
+                    <img src="<?php echo $this->options->background ?>">
+                <?php } ?>
+                <h1><?php $this->title() ?></h1>
+            </div>
+            <div class="nexmoe-post-meta">
+                <a><i class="nexmoefont icon-calendar-fill"></i><?php $this->date('Y年n月d日'); ?></a>
+                <a><?php $this->commentsNum('%d'); ?> 评论</a>
+            </div>
+            <article>
+                <?php $this->content(''); ?>
+            </article>
+            <div id="comments">
+                <?php $this->need('comments.php'); ?>
+            </div>
         </div>
+
+
     </div>
-    <div id="post-content" class="post-content">
-        <?php parseContent($this); ?>
-    </div>
-</article>
-<script>
+    <script>
 (function(){
     let a =document.getElementById("flinks");
     if(a){
@@ -43,6 +61,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     }
 }())
  </script>
-<?php $this->need('comments.php'); ?>
-
+</div>
 <?php $this->need('layout/_partial/after-footer.php'); ?>
+</body>
+
+</html>
