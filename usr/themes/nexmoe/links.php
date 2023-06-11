@@ -169,13 +169,6 @@ $this->need('layout/_partial/head.php');
     border: 1px solid #eaeaea;
     border-radius: 50%;
 }
-    .bg-white {
-    background-color: #fff !important;
-}
-
-.bg-grey {
-    background-color: #f7f7f7 !important;
-}
 
 .bg-deepgrey {
     background-color: rgba(0, 0, 0, .5) !important;
@@ -247,9 +240,9 @@ $this->need('layout/_partial/head.php');
         let nsl = ns.length;
         let str ='<div class="post-lists"><div class="post-lists-body" id ="flinksH">';
         let bgid = 0;
-        const bgs =["bg-white","bg-grey","bg-deepgrey","bg-blue","bg-purple","bg-green","bg-yellow","bg-red","bg-orange"];
+        const bgs =["bg-deepgrey","bg-blue","bg-purple","bg-green","bg-yellow","bg-red","bg-orange"];
         for(let i = 0;i<=nsl-4;i+=4){
-           bgid = Math.floor(Math.random() * 9);
+           bgid = Math.floor(Math.random() * 7);
             str += (`<div class="post-list-item"><div class="post-list-item-container "><div class="item-label ${bgs[bgid]}"><div class="item-title"><a href="${ns[i+1].innerText}">${ns[i].innerText}</a></div><div class="item-meta clearfix"><div class="item-meta-ico bg-ico-book"style="background: url(${ns[i+2].innerText}) no-repeat;background-size: 40px auto;"></div><div class="item-meta-date">${ns[i+3].innerText}</div></div></div></div></div>`);
         }
         str+='</div></div><style>.post-list-item{width: 50%;min-width: 300px;}</style>';
