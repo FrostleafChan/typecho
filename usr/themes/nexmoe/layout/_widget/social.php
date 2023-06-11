@@ -31,6 +31,6 @@
         <a class="mdui-ripple" href="<?php $this->options->bilibili(); ?>" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color:#e76a8d;background-color:rgba(231,106,141,.1)" rel="external nofollow noopener noreferrer"> <i class="nexmoefont icon-bilibili"></i> </a>
         <a class="mdui-ripple" href="<?php $this->options->github(); ?>" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color:#191717;background-color:rgba(25,23,23,.1)" rel="external nofollow noopener noreferrer"><i class="nexmoefont icon-github"></i> </a>
         <a class="mdui-ripple" href="<?php $this->options->telegram(); ?>" target="_blank" mdui-tooltip="{content: 'Telegram'}" style="color:#27a7e5;background-color:rgba(39,167,229,.1)" rel="external nofollow noopener noreferrer"><i class="nexmoefont icon-telegram"></i> </a>
-        <a class="mdui-ripple" href="<?php $this->options->siteUrl(); ?>/feed" target="_blank" mdui-tooltip="{content: 'RSS'}" style="color:#f78422;background-color:rgba(247,132,34,.1)"><i class="nexmoefont icon-rss"></i></a>
+        <a class="mdui-ripple" href="<?php $this->options->siteUrl(); ?>feed" target="_blank" mdui-tooltip="{content: 'RSS'}" style="color:#f78422;background-color:rgba(247,132,34,.1)"><i class="nexmoefont icon-rss"></i></a>
     </div>
 </div> 
