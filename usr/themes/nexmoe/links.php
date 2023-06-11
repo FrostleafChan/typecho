@@ -5,7 +5,7 @@
 * @package custom
 */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('header.php'); ?>
+<?php $this->need('layout/_partial/head.php'); ?>
 
 <article class="main-content page-page">
     <div class="post-header">
@@ -45,4 +45,4 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
  </script>
 <?php $this->need('comments.php'); ?>
 
-<?php $this->need('footer.php'); ?>
+<?php $this->need('layout/_partial/after-footer.php'); ?>
