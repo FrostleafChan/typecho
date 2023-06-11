@@ -21,7 +21,7 @@ jobs:
           curl -sSX POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
             -H "Authorization: Bearer ${CF_API_KEY}" \
             -H "Content-Type: application/json" \
-            -H "X-Auth-Email: chan@frostleaf.dev"
+            -H "X-Auth-Email: chan@frostleaf.dev" \
             --data '{"purge_everything":true}'
 
   cleanup:
