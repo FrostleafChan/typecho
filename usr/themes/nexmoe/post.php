@@ -90,7 +90,6 @@ $this->need('layout/_partial/head.php');
             <div class="nexmoe-post-meta">
                 <a><i class="nexmoefont icon-calendar-fill"></i><?php $this->date('Y年n月d日'); ?></a>
                 <a><?php artCount($this->cid); ?> 汉字</a>
-                <a><?php post_view($this); ?> 围观</a>
                 <a><?php $this->commentsNum('%d'); ?> 评论</a>
                 <?php $this->category(','); ?>
                 <?php $this->tags(' ', true); ?>
