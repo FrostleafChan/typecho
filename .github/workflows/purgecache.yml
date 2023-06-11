@@ -18,35 +18,19 @@ jobs:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
         run: |
-          curl -sSX POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" 
-            -H "Authorization: Bearer ${CF_API_KEY}" 
-            -H "Content-Type: application/json" 
+          curl -sSX POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+            -H "Authorization: Bearer ${CF_API_KEY}" \
+            -H "Content-Type: application/json" \
+            -H "X-Auth-Email: chan@frostleaf.dev"
             --data '{"purge_everything":true}'
 
   cleanup:
     runs-on: ubuntu-latest
     steps:
       - name: Delete old workflow runs
-        uses: actions/github-script@v4
+        uses: MajorScruffy/delete-old-workflow-runs@v0.2.0
         with:
-          script: |
-            const workflowName = 'Cloudflare Cache Purge'; // workflow 的名称
-            const maxRuns = 5; // 最多保留的 workflow run 数量
-            const { data: runs } = await github.actions.listWorkflowRuns({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: await github.actions.getWorkflowId({ owner: context.repo.owner, repo: context.repo.repo, workflow_file_path: '.github/workflows/purge.yml' }), // 需要获取 workflow_id，可以使用 getWorkflowId 函数
-              per_page: 100
-            });
-            const sortedRuns = runs.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-            const toDelete = sortedRuns.slice(maxRuns);
-            for (const run of toDelete) {
-              console.log(Deleting run ${run.id});
-              await github.actions.deleteWorkflowRun({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                run_id: run.id
-              });
-            }
+          repository: LtD0gE/typecho
+          older-than-seconds: 86400
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
