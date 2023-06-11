@@ -153,7 +153,7 @@ $this->need('layout/_partial/head.php');
 .post-list-item-container .item-label .item-meta .item-meta-date {
     font-size: 12px;
     position: relative;
-    float: left;
+    float: left;们生活在大地上，但我们的梦想超越天
     padding-top: 9px;
     padding-left: 9px;
     text-align: right;
@@ -203,6 +203,10 @@ $this->need('layout/_partial/head.php');
 
 .bg-orange {
     background-color: #f68e5f !important;
+}
+.post-list-item-container:hover {
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
 }
 </style>
 <?php $this->need('layout/_partial/background.php'); ?>
